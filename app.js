@@ -1,13 +1,13 @@
 // ✅ Put your image filenames here (inside /assets)
 const IMAGES = [
-  "assets/pic1.jpeg",
-  "assets/pic2.jpeg",
-  "assets/pic3.jpeg",
-  "assets/pic4.jpeg",
-  "assets/pic5.jpeg",
-  "assets/pic6.jpeg",
-  "assets/pic7.jpeg",
-  "assets/pic8.jpeg",
+  "img/pic1.jpeg",
+  "img/pic2.jpeg",
+  "img/pic3.jpeg",
+  "img/pic4.jpeg",
+  "img/pic5.jpeg",
+  "img/pic6.jpeg",
+  "img/pic7.jpeg",
+  "img/pic8.jpeg",
 ];
 
 
