@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💘 Valentine</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Floating hearts background -->
+<div id="hearts-layer" aria-hidden="true"></div>
+
+<!-- ASK SCREEN -->
+<main id="ask-screen" class="screen active">
+  <h1 class="title">Will you be my Valentine? 💝</h1>
+
+  <div class="button-row" id="button-area">
+    <button id="yesBtn" class="btn yes">YES 💘</button>
+    <button id="noBtn" class="btn no">NO 🙃</button>
+  </div>
+
+  <p class="hint">(Try clicking “NO” 😭)</p>
+
+  <!-- Confetti layer -->
+  <div id="confetti-layer" aria-hidden="true"></div>
+</main>
+
+<!-- FINAL SCREEN -->
+<main id="final-screen" class="screen">
+  <div class="final-header">
+    <h1 class="love">I love you ❤️</h1>
+    <h2 class="ann">Happy 2 month Anniversary — December 7, 2025 💞</h2>
+  </div>
+
+  <section class="gallery" id="gallery"></section>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
