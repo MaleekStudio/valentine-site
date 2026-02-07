@@ -148,18 +148,17 @@ function renderGallery() {
 yesBtn.addEventListener("click", () => {
   confettiBurst(70);
 
-  // stop hearts on final (optional: keep them if you want)
-  clearInterval(heartTimer);
+  document.body.classList.add("love-mode");
+
+  let heartRain = setInterval(spawnHeart, 300);
+  setTimeout(() => clearInterval(heartRain), 12000);
 
   askScreen.classList.add("fade-out");
+
   setTimeout(() => {
     askScreen.classList.remove("active", "fade-out");
-
     renderGallery();
     finalScreen.classList.add("active", "fade-in");
-
-    // after fade-in, clean class
-    setTimeout(() => finalScreen.classList.remove("fade-in"), 480);
   }, 450);
 });
 
