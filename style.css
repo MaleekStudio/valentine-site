@@ -177,4 +177,39 @@ body{
 @keyframes fadeIn{
   from{ opacity:0; transform: translateY(6px); }
   to{ opacity:1; transform: translateY(0); }
+  .love-aura{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center,
+    rgba(255,120,180,0.22),
+    rgba(255,120,180,0.08),
+    transparent 70%);
+  animation: auraPulse 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes auraPulse{
+  0%{ opacity:0.6; }
+  50%{ opacity:1; }
+  100%{ opacity:0.6; }
+}
+
+/* Big heart */
+.big-heart{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  opacity: 0.85;
+  animation: heartBeat 1.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 25px rgba(255,80,140,0.55));
+}
+
+@keyframes heartBeat{
+  0%{ transform: translate(-50%, -50%) scale(1); }
+  25%{ transform: translate(-50%, -50%) scale(1.1); }
+  40%{ transform: translate(-50%, -50%) scale(1); }
+  60%{ transform
 }
