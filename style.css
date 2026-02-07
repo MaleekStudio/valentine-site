@@ -195,21 +195,42 @@ body{
   100%{ opacity:0.6; }
 }
 
-/* Big heart */
-.big-heart{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 90px;
-  opacity: 0.85;
-  animation: heartBeat 1.6s ease-in-out infinite;
-  filter: drop-shadow(0 0 25px rgba(255,80,140,0.55));
+/* Romantic glow */
+body.love-mode {
+  animation: glow 3s ease-in-out infinite alternate;
 }
 
-@keyframes heartBeat{
-  0%{ transform: translate(-50%, -50%) scale(1); }
-  25%{ transform: translate(-50%, -50%) scale(1.1); }
-  40%{ transform: translate(-50%, -50%) scale(1); }
-  60%{ transform
+@keyframes glow {
+  from { background-color: #fff0f6; }
+  to   { background-color: #ffe1ee; }
+}
+
+/* Heartbeat effect */
+.love {
+  animation: heartbeat 1.6s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.05); }
+  50%  { transform: scale(1); }
+  75%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Love message reveal */
+.love-message {
+  opacity: 0;
+  margin-top: 18px;
+  font-size: 20px;
+  color: #6b0030;
+  animation: fadeInLove 3s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInLove {
+  to {
+    opacity: 1;
+  }
+}
 }
